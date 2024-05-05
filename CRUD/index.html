@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="it">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- GOOGLE FONT -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DotGothic16&display=swap"
+      rel="stylesheet"
+    />
+    <!-- CSS CUSTOM -->
+    <link rel="stylesheet" href="style.css" />
+    <title>Gestionale Utenti</title>
+  </head>
+  <body>
+    <!-- Container -->
+    <div class="container">
+      <h1>Off-Users</h1>
+      <!-- CREATE: Creazione Utente -->
+      <div id="CREATE">
+        <h2>Aggiungi un utente</h2>
+        <!-- Form aggiunta utente -->
+        <form id="user-form">
+          <label for="name">Nome:</label>
+          <input type="text" id="name" required />
+          <label for="email">Email:</label>
+          <input type="email" id="email" required />
+          <button type="submit">+</button>
+        </form>
+      </div>
+
+      <!-- READ: Lista degli utenti -->
+      <div id="READ">
+        <h2>Lista Utenti</h2>
+        <!-- Cards utenti -->
+        <div id="user-cards"></div>
+      </div>
+    </div>
+
+    <!-- SCRIPT -->
+    <script src="script.js"></script>
+  </body>
+</html>
